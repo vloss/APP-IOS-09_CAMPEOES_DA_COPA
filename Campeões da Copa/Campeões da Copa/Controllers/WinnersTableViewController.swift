@@ -45,11 +45,15 @@ class WinnersTableViewController: UITableViewController {
         return worldsCups.count
     }
 
-    
+    // Celula de uma linha
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        // Configure the cell...
+        let worldCup = worldsCups[indexPath.row]
+        
+        cell.textLabel?.text = "Copa \(worldCup.year) - \(worldCup.country)"
+        cell.detailTextLabel?.text = "\(worldCup.winner) vs \(worldCup.vice)"
+        cell.imageView?.image = UIImage(named: "\(worldCup.winner).png")
 
         return cell
     }
