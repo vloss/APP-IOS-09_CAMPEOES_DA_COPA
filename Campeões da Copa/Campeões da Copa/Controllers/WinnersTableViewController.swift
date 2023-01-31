@@ -17,38 +17,43 @@ class WinnersTableViewController: UITableViewController {
         loadWorldCups()
     }
     
+    // Metodo que vai carregar todos dados do json e salvar no array worldsCups
     func loadWorldCups(){
         // captura a URL do file json
-        let fileURL = Bundle.main.url(forResource: "winners.json", withExtension: nil)
+        let fileURL     = Bundle.main.url(forResource: "winners.json", withExtension: nil)!
+        let jsonData    = try! Data(contentsOf: fileURL)
         
-        let jsonData = try! Data(contentsOf:fileURL)
-        
+        //do catch
         do{
-            worldsCups = try JSONDecoder().decode(<#T##type: Decodable.Protocol##Decodable.Protocol#>, from: <#T##Data#>)
+            worldsCups = try JSONDecoder().decode([WorldCup].self, from: jsonData)
+        } catch {
+            print(error.localizedDescription)
         }
     }
 
     // MARK: - Table view data source
 
+    // Quando for apenas uma seção, não é obrigatório o uso do metodo.
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
+    // Quantidade de linhas por seção, é passado o ID da section que pode ser criado um switch para dividir as quantidades por section.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return worldsCups.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
