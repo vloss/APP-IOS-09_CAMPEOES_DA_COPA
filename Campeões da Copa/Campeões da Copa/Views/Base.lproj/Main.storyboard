@@ -151,7 +151,7 @@
                             <outlet property="delegate" destination="zcl-cj-s0d" id="x0v-aK-hOr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Campeões" id="bxX-dF-rnM"/>
+                    <navigationItem key="navigationItem" title="Campeões" largeTitleDisplayMode="never" id="bxX-dF-rnM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dC-UP-n8w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,8 +161,8 @@
         <scene sceneID="aKY-XV-IAh">
             <objects>
                 <navigationController id="h7S-y9-qXh" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F4t-Lx-X92">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="F4t-Lx-X92">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -173,7 +173,7 @@
             </objects>
             <point key="canvasLocation" x="-852" y="-37"/>
         </scene>
-        <!--World Cup View Controller-->
+        <!--Title-->
         <scene sceneID="O88-Kf-jUX">
             <objects>
                 <viewController id="fkY-8g-aNO" customClass="WorldCupViewController" customModule="Campeo_es_da_Copa" customModuleProvider="target" sceneMemberID="viewController">
@@ -183,7 +183,7 @@
                         <viewLayoutGuide key="safeArea" id="4uI-Zq-7pF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="94P-XK-Q3S"/>
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="3VJ-Nb-Vku"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0K-p3-46g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
