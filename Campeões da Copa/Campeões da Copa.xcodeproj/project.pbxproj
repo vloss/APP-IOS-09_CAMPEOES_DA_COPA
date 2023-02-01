@@ -65,6 +65,7 @@
 		B72B654529886A9F00550533 /* WinnersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B654429886A9F00550533 /* WinnersTableViewController.swift */; };
 		B72B654829886B0E00550533 /* WorldCupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B654729886B0E00550533 /* WorldCupViewController.swift */; };
 		B72B654A29886B6800550533 /* WorldCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B654929886B6800550533 /* WorldCup.swift */; };
+		B72B654F2989BAD800550533 /* WorldCupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B654E2989BAD800550533 /* WorldCupTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +129,7 @@
 		B72B654429886A9F00550533 /* WinnersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnersTableViewController.swift; sourceTree = "<group>"; };
 		B72B654729886B0E00550533 /* WorldCupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupViewController.swift; sourceTree = "<group>"; };
 		B72B654929886B6800550533 /* WorldCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCup.swift; sourceTree = "<group>"; };
+		B72B654E2989BAD800550533 /* WorldCupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorldCupTableViewCell.swift; path = "Campeões da Copa/Controllers/WorldCupTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 		B72B654629886ACE00550533 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B72B654E2989BAD800550533 /* WorldCupTableViewCell.swift */,
 				B72B654429886A9F00550533 /* WinnersTableViewController.swift */,
 				B72B654729886B0E00550533 /* WorldCupViewController.swift */,
 			);
@@ -379,6 +382,7 @@
 				B72B654529886A9F00550533 /* WinnersTableViewController.swift in Sources */,
 				B72B64CB2988677C00550533 /* AppDelegate.swift in Sources */,
 				B72B654A29886B6800550533 /* WorldCup.swift in Sources */,
+				B72B654F2989BAD800550533 /* WorldCupTableViewCell.swift in Sources */,
 				B72B654829886B0E00550533 /* WorldCupViewController.swift in Sources */,
 				B72B64CD2988677C00550533 /* SceneDelegate.swift in Sources */,
 			);
@@ -530,6 +534,7 @@
 				DEVELOPMENT_TEAM = 3Y5F7BP894;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Campeões da Copa/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Campeões";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -558,6 +563,7 @@
 				DEVELOPMENT_TEAM = 3Y5F7BP894;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Campeões da Copa/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Campeões";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

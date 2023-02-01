@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Campeões-->
         <scene sceneID="fbq-eK-xck">
             <objects>
                 <tableViewController id="zcl-cj-s0d" customClass="WinnersTableViewController" customModule="Campeo_es_da_Copa" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="144" id="pSC-zV-xca">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="144" id="pSC-zV-xca" customClass="WorldCupTableViewCell" customModule="Campeo_es_da_Copa" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="188" width="393" height="144"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pSC-zV-xca" id="5aN-DD-EqU">
@@ -133,6 +133,17 @@
                                         <constraint firstItem="VmY-ph-WsY" firstAttribute="top" secondItem="ZRh-ZI-eBd" secondAttribute="bottom" constant="17" id="yDb-AW-3Gm"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ivVice" destination="Ghr-ke-6xL" id="CDd-WH-pOW"/>
+                                    <outlet property="ivWinner" destination="VmY-ph-WsY" id="B2x-s1-l68"/>
+                                    <outlet property="lbCountry" destination="5FE-a8-mdK" id="HEE-h7-J1M"/>
+                                    <outlet property="lbVice" destination="qgD-1T-7Or" id="SOu-HZ-wEL"/>
+                                    <outlet property="lbViceScore" destination="aUM-0g-oMu" id="sIo-rD-zK9"/>
+                                    <outlet property="lbWinner" destination="B8L-ay-CFL" id="thH-0H-HsC"/>
+                                    <outlet property="lbWinnerScore" destination="VAH-Dl-sud" id="Zlm-GT-fpH"/>
+                                    <outlet property="lbYear" destination="pIM-yX-mw7" id="J0t-Yv-SVR"/>
+                                    <segue destination="fkY-8g-aNO" kind="show" id="FNo-3x-uJa"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -140,7 +151,7 @@
                             <outlet property="delegate" destination="zcl-cj-s0d" id="x0v-aK-hOr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="bxX-dF-rnM"/>
+                    <navigationItem key="navigationItem" title="Campeões" id="bxX-dF-rnM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dC-UP-n8w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,6 +183,7 @@
                         <viewLayoutGuide key="safeArea" id="4uI-Zq-7pF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="94P-XK-Q3S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0K-p3-46g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -47,15 +47,37 @@ class WinnersTableViewController: UITableViewController {
 
     // Celula de uma linha
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        // Trata a Cell como sendo do tipo WorldCupTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WorldCupTableViewCell
 
         let worldCup = worldsCups[indexPath.row]
         
-        cell.textLabel?.text = "Copa \(worldCup.year) - \(worldCup.country)"
-        cell.detailTextLabel?.text = "\(worldCup.winner) vs \(worldCup.vice)"
-        cell.imageView?.image = UIImage(named: "\(worldCup.winner).png")
+        cell.prepare(with: worldCup)
+        
+        
+        // Utilizado quando for Cell pré definida
+        // let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        // let worldCup = worldsCups[indexPath.row]
+
+        // cell.textLabel?.text = "Copa \(worldCup.year) - \(worldCup.country)"
+        // cell.detailTextLabel?.text = "\(worldCup.winner) vs \(worldCup.vice)"
+        // cell.imageView?.image = UIImage(named: "\(worldCup.winner).png")
 
         return cell
+    }
+    
+    //Metodo que prepara Dados para disparar para próxima tela.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Instancia a próxima tela
+        let vc = segue.destination as! WorldCupViewController
+        
+        // captura a copa selcionada através do parametro id da linha clicada
+        let worldCup = worldsCups[tableView.indexPathForSelectedRow!.row]
+        
+        vc.worldCup = worldCup
     }
     
 
