@@ -180,22 +180,100 @@
                     <view key="view" contentMode="scaleToFill" id="9Si-yS-2ov">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Brasil.png" translatesAutoresizingMaskIntoConstraints="NO" id="Awv-BG-LDD">
+                                <rect key="frame" x="28.000000000000007" y="175" width="118.66666666666669" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="1xd-j4-fDi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Argentina.png" translatesAutoresizingMaskIntoConstraints="NO" id="oYD-rT-3Ln">
+                                <rect key="frame" x="246.33333333333337" y="175" width="130.66666666666663" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="cOY-B2-yPL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 X 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="Gbp-LS-vMp">
+                                <rect key="frame" x="162.66666666666666" y="187" width="67.666666666666657" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Brasil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRE-QC-c0Y">
+                                <rect key="frame" x="71" y="241" width="47" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Argentina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBz-ei-VDA">
+                                <rect key="frame" x="282.33333333333331" y="241" width="58.666666666666686" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tragetória do Campeção" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk2-nb-1Zl">
+                                <rect key="frame" x="122" y="281" width="149" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJg-gO-XZs">
+                                <rect key="frame" x="16" y="327" width="361" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="hjz-91-cvc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4uI-Zq-7pF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nk2-nb-1Zl" firstAttribute="top" secondItem="Gbp-LS-vMp" secondAttribute="bottom" constant="60" id="12f-m6-UsI"/>
+                            <constraint firstItem="oYD-rT-3Ln" firstAttribute="height" secondItem="Awv-BG-LDD" secondAttribute="height" id="5QP-p1-XP9"/>
+                            <constraint firstItem="Gbp-LS-vMp" firstAttribute="leading" secondItem="Awv-BG-LDD" secondAttribute="trailing" constant="16" id="5aK-Fd-HN9"/>
+                            <constraint firstItem="Awv-BG-LDD" firstAttribute="leading" secondItem="4uI-Zq-7pF" secondAttribute="leading" constant="28" id="756-yO-4iU"/>
+                            <constraint firstItem="cJg-gO-XZs" firstAttribute="leading" secondItem="9Si-yS-2ov" secondAttribute="leadingMargin" id="9CT-OJ-Mvf"/>
+                            <constraint firstItem="Gbp-LS-vMp" firstAttribute="centerX" secondItem="9Si-yS-2ov" secondAttribute="centerX" id="FJV-6E-Ctg"/>
+                            <constraint firstItem="BBz-ei-VDA" firstAttribute="centerX" secondItem="oYD-rT-3Ln" secondAttribute="centerX" id="FO4-dK-dEi"/>
+                            <constraint firstItem="cJg-gO-XZs" firstAttribute="trailing" secondItem="9Si-yS-2ov" secondAttribute="trailingMargin" id="LPv-ub-bL5"/>
+                            <constraint firstItem="oYD-rT-3Ln" firstAttribute="top" secondItem="4uI-Zq-7pF" secondAttribute="top" constant="20" id="Lb7-WB-wiR"/>
+                            <constraint firstItem="fRE-QC-c0Y" firstAttribute="top" secondItem="Awv-BG-LDD" secondAttribute="bottom" constant="8" id="MoK-gq-ez2"/>
+                            <constraint firstItem="oYD-rT-3Ln" firstAttribute="leading" secondItem="Gbp-LS-vMp" secondAttribute="trailing" constant="16" id="Ya1-aM-Fgd"/>
+                            <constraint firstItem="cJg-gO-XZs" firstAttribute="top" secondItem="Nk2-nb-1Zl" secondAttribute="bottom" constant="30" id="Ywx-0Q-BfX"/>
+                            <constraint firstItem="fRE-QC-c0Y" firstAttribute="centerX" secondItem="Awv-BG-LDD" secondAttribute="centerX" id="agx-r6-f3M"/>
+                            <constraint firstItem="cJg-gO-XZs" firstAttribute="leading" secondItem="9Si-yS-2ov" secondAttribute="leadingMargin" id="cO6-6M-YsN"/>
+                            <constraint firstItem="Awv-BG-LDD" firstAttribute="top" secondItem="4uI-Zq-7pF" secondAttribute="top" constant="20" id="fS4-gI-Wh9"/>
+                            <constraint firstItem="Gbp-LS-vMp" firstAttribute="centerY" secondItem="Awv-BG-LDD" secondAttribute="centerY" id="nfw-VT-cbm"/>
+                            <constraint firstItem="4uI-Zq-7pF" firstAttribute="trailing" secondItem="oYD-rT-3Ln" secondAttribute="trailing" constant="16" id="pRr-mF-0lD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cJg-gO-XZs" secondAttribute="trailing" id="r0R-04-REf"/>
+                            <constraint firstItem="Nk2-nb-1Zl" firstAttribute="centerX" secondItem="9Si-yS-2ov" secondAttribute="centerX" id="uvs-EI-QSP"/>
+                            <constraint firstItem="BBz-ei-VDA" firstAttribute="top" secondItem="oYD-rT-3Ln" secondAttribute="bottom" constant="8" id="vSR-g2-asp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="3VJ-Nb-Vku"/>
+                    <connections>
+                        <outlet property="ivVice" destination="oYD-rT-3Ln" id="vfa-03-MQ3"/>
+                        <outlet property="ivWinner" destination="Awv-BG-LDD" id="Ddp-3p-etf"/>
+                        <outlet property="lbScore" destination="Gbp-LS-vMp" id="YVd-ge-utb"/>
+                        <outlet property="lbVice" destination="BBz-ei-VDA" id="vsj-lc-Obe"/>
+                        <outlet property="lbWinner" destination="fRE-QC-c0Y" id="kc1-ud-1gC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0K-p3-46g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976" y="-47"/>
+            <point key="canvasLocation" x="974.80916030534343" y="-47.183098591549296"/>
         </scene>
     </scenes>
     <resources>
         <image name="Alemanha.png" width="138" height="93"/>
+        <image name="Argentina.png" width="138" height="93"/>
         <image name="Brasil.png" width="138" height="93"/>
         <image name="calendar" width="56" height="56"/>
         <image name="globe" width="56" height="56"/>
         <image name="header" width="1200" height="514"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
