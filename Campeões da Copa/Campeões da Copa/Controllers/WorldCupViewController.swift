@@ -16,6 +16,7 @@ class WorldCupViewController: UIViewController {
     @IBOutlet weak var lbScore: UILabel!
     @IBOutlet weak var lbWinner: UILabel!
     @IBOutlet weak var lbVice: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,5 +30,32 @@ class WorldCupViewController: UIViewController {
         lbScore.text = "\(worldCup.winnerScore) X \(worldCup.viceScore)"
         
     }
+    
+}
+
+
+extension WorldCupViewController: UITableViewDataSource{
+    // Numero de seções
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // Pega a quantidade de matches do campeão
+        return worldCup.matches.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        // pega a quantidade de jogos de cada seção
+        let games = worldCup.matches[section].games
+        
+        return games.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        return cell
+    }
+}
+
+extension WorldCupViewController: UITableViewDelegate {
     
 }
