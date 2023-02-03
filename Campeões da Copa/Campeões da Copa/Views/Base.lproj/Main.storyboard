@@ -224,6 +224,20 @@
                                     <constraint firstAttribute="height" constant="1" id="hjz-91-cvc"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="23j-lC-87u">
+                                <rect key="frame" x="0.0" y="332" width="393" height="486"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Yaj-xP-kEu">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yaj-xP-kEu" id="4xV-gs-UcK">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4uI-Zq-7pF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -233,8 +247,12 @@
                             <constraint firstItem="Gbp-LS-vMp" firstAttribute="leading" secondItem="Awv-BG-LDD" secondAttribute="trailing" constant="16" id="5aK-Fd-HN9"/>
                             <constraint firstItem="Awv-BG-LDD" firstAttribute="leading" secondItem="4uI-Zq-7pF" secondAttribute="leading" constant="28" id="756-yO-4iU"/>
                             <constraint firstItem="cJg-gO-XZs" firstAttribute="leading" secondItem="9Si-yS-2ov" secondAttribute="leadingMargin" id="9CT-OJ-Mvf"/>
+                            <constraint firstItem="4uI-Zq-7pF" firstAttribute="bottom" secondItem="23j-lC-87u" secondAttribute="bottom" id="9g6-zr-CDc"/>
+                            <constraint firstItem="4uI-Zq-7pF" firstAttribute="trailing" secondItem="23j-lC-87u" secondAttribute="trailing" id="C81-Da-Yz3"/>
+                            <constraint firstItem="4uI-Zq-7pF" firstAttribute="bottom" secondItem="23j-lC-87u" secondAttribute="bottom" id="EG7-x3-XiZ"/>
                             <constraint firstItem="Gbp-LS-vMp" firstAttribute="centerX" secondItem="9Si-yS-2ov" secondAttribute="centerX" id="FJV-6E-Ctg"/>
                             <constraint firstItem="BBz-ei-VDA" firstAttribute="centerX" secondItem="oYD-rT-3Ln" secondAttribute="centerX" id="FO4-dK-dEi"/>
+                            <constraint firstItem="23j-lC-87u" firstAttribute="leading" secondItem="4uI-Zq-7pF" secondAttribute="leading" id="KJG-aI-Ni7"/>
                             <constraint firstItem="cJg-gO-XZs" firstAttribute="trailing" secondItem="9Si-yS-2ov" secondAttribute="trailingMargin" id="LPv-ub-bL5"/>
                             <constraint firstItem="oYD-rT-3Ln" firstAttribute="top" secondItem="4uI-Zq-7pF" secondAttribute="top" constant="20" id="Lb7-WB-wiR"/>
                             <constraint firstItem="fRE-QC-c0Y" firstAttribute="top" secondItem="Awv-BG-LDD" secondAttribute="bottom" constant="8" id="MoK-gq-ez2"/>
@@ -243,11 +261,15 @@
                             <constraint firstItem="fRE-QC-c0Y" firstAttribute="centerX" secondItem="Awv-BG-LDD" secondAttribute="centerX" id="agx-r6-f3M"/>
                             <constraint firstItem="cJg-gO-XZs" firstAttribute="leading" secondItem="9Si-yS-2ov" secondAttribute="leadingMargin" id="cO6-6M-YsN"/>
                             <constraint firstItem="Awv-BG-LDD" firstAttribute="top" secondItem="4uI-Zq-7pF" secondAttribute="top" constant="20" id="fS4-gI-Wh9"/>
+                            <constraint firstItem="23j-lC-87u" firstAttribute="top" secondItem="cJg-gO-XZs" secondAttribute="bottom" constant="4" id="j5l-1w-2eU"/>
+                            <constraint firstItem="23j-lC-87u" firstAttribute="leading" secondItem="4uI-Zq-7pF" secondAttribute="leading" id="k9d-IT-76N"/>
                             <constraint firstItem="Gbp-LS-vMp" firstAttribute="centerY" secondItem="Awv-BG-LDD" secondAttribute="centerY" id="nfw-VT-cbm"/>
                             <constraint firstItem="4uI-Zq-7pF" firstAttribute="trailing" secondItem="oYD-rT-3Ln" secondAttribute="trailing" constant="16" id="pRr-mF-0lD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cJg-gO-XZs" secondAttribute="trailing" id="r0R-04-REf"/>
+                            <constraint firstItem="23j-lC-87u" firstAttribute="top" secondItem="cJg-gO-XZs" secondAttribute="bottom" constant="4" id="rGf-v6-OLH"/>
                             <constraint firstItem="Nk2-nb-1Zl" firstAttribute="centerX" secondItem="9Si-yS-2ov" secondAttribute="centerX" id="uvs-EI-QSP"/>
                             <constraint firstItem="BBz-ei-VDA" firstAttribute="top" secondItem="oYD-rT-3Ln" secondAttribute="bottom" constant="8" id="vSR-g2-asp"/>
+                            <constraint firstItem="4uI-Zq-7pF" firstAttribute="trailing" secondItem="23j-lC-87u" secondAttribute="trailing" id="z39-k0-7oO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="3VJ-Nb-Vku"/>
