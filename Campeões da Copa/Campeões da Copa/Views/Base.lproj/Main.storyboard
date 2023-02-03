@@ -228,7 +228,7 @@
                                 <rect key="frame" x="0.0" y="332" width="393" height="486"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Yaj-xP-kEu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Yaj-xP-kEu" customClass="GamesTableViewCell" customModule="Campeo_es_da_Copa" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yaj-xP-kEu" id="4xV-gs-UcK">
@@ -284,6 +284,13 @@
                                                 <constraint firstAttribute="trailing" secondItem="YFo-No-d0X" secondAttribute="trailing" constant="16" id="yZk-d6-un1"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ivAway" destination="YFo-No-d0X" id="f6W-Xp-pad"/>
+                                            <outlet property="ivHome" destination="wnm-Si-YxX" id="pxt-Ya-5Ra"/>
+                                            <outlet property="lbAway" destination="54v-MU-N3o" id="gDt-H4-f0k"/>
+                                            <outlet property="lbHome" destination="AFD-xR-3bf" id="jQp-Ee-BUD"/>
+                                            <outlet property="lbScore" destination="lHv-fi-pnA" id="G7L-jP-056"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

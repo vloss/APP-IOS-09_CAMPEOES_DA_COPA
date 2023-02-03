@@ -28,11 +28,8 @@ class WorldCupViewController: UIViewController {
         lbVice.text = worldCup.vice
         lbWinner.text = worldCup.winner
         lbScore.text = "\(worldCup.winnerScore) X \(worldCup.viceScore)"
-        
     }
-    
 }
-
 
 extension WorldCupViewController: UITableViewDataSource{
     // Numero de seções
