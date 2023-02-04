@@ -47,9 +47,19 @@ extension WorldCupViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! GamesTableViewCell
+        
+        let match = worldCup.matches[indexPath.section]
+        let game = match.games[indexPath.row]
+        
+        cell.prepare(with: game)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let match = worldCup.matches[section]
+        return match.stage
     }
 }
 
